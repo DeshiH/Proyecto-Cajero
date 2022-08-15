@@ -1,0 +1,88 @@
+        .inicio {
+            background-color: gray;
+            padding: 20px;
+            height: 240px;
+            width: 350px;
+            border: 100px;
+            border-radius: 45px;
+            position: absolute;
+            margin-top: 130px;
+            margin-left: 380px;
+        }
+        
+        .acciones {
+            background-color: gray;
+            display: none;
+            padding: 20px;
+            height: 240px;
+            width: 350px;
+            border: 100px;
+            border-radius: 45px;
+            position: absolute;
+            margin-top: -480px;
+            margin-left: 380px;
+        }
+        
+        .contrasenia1 {
+            position: absolute;
+            margin-top: 50px;
+            margin-left: -7px;
+        }
+        
+        .ingresar {
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        
+        .cerrar {
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .bienvenido {
+            color: rgb(4, 98, 185);
+            margin-left: 20%;
+        }
+        
+        .cajero {
+            position: absolute;
+            margin-left: 230px;
+            margin-top: 104.5px;
+            border-image: auto;
+            height: 8%;
+            width: 8%;
+        }
+        
+        .Usuario {
+            position: absolute;
+            margin-top: 20px;
+        }
+        
+        .usuario1 {
+            border-radius: 5px;
+            margin-left: 130px;
+            position: absolute;
+            margin-top: 20px;
+        }
+        
+        .atm {
+            color: rgb(4, 98, 185);
+            margin-left: 10px;
+        }
+        
+        .acceder {
+            border-radius: 5px;
+        }
+        
+        .retirar1 {
+            border-radius: 5px;
+        }
+        
+        .saldo1 {
+            border-radius: 5px;
+        }
+        
+        .deposito1 {
+            border-radius: 5px;
+        }

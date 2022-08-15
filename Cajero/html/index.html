@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO CON INTERFAZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <h1><img class="cajero" src="../img/descarga.png" alt=""></h1>
+
+    <main class="inicio" id="inicio">
+        <h1 class="atm">Goliath National Bank</h1>
+        <label class="Usuario" for="usuario">Nombre de usuario</label>
+        <input class="usuario1" type="text" name="usuario" id="usuario">
+        <label class="contrasenia1" for="contrasenia">Clave de acceso</label>
+        <input class='ingresar' type="text" name="contrasenia" id="contrasenia">
+        <button class="acceder" onclick="ingresar()">acceder</button>
+    </main>
+
+    <img src="../img/ATM_Screen (1).png" alt="">
+    <div class="acciones" id="acciones">
+        <h2 class="bienvenido">Welcome <span id="nombre-usuario"></span></h2>
+        <p id="info">...</p>
+        <button class="saldo1" id="consultar">Saldo</button>
+        <p id="info1"></p>
+        <input type="text" id="retiro">
+        <button class="retirar1" id="retirar">Hacer un retiro</button>
+        <p id="info2"></p>
+        <input type="text" id="depositar">
+        <button class="deposito1" id="deposito">Hacer un deposito</button>
+        <input class="cerrar" type="button" value="Cerrar" onClick="javascript:window.close()" ; />
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
