@@ -1,48 +1,9 @@
 // Mini Proyecto: Cajero Automático
-
-// Crea una aplicación web con JavaScript donde simulemos la interacción con un cajero automático.
-
-// Al ingresar al cajero, puedes seleccionar la cuenta con la que deseas interactuar. Deben existir al menos tres cuentas. Para esto, puedes trabajar con un arreglo de objetos como el siguiente:
-
 let cuentas = [
     { nombre: "Ted mosby", saldo: 200, password: 'casarme' },
     { nombre: "Barney", saldo: 290, password: 'dinero' },
     { nombre: "Marshall", saldo: 67, password: 'lily' }
 ];
-
-// function consultarSaldo(posicionUsuario) {
-//     alert('El saldo del usuario ' + cuentas[posicionUsuario].nombre + ' es de $' + cuentas[posicionUsuario].saldo);
-//     mostrarMenu(posicionUsuario)
-// }
-
-// function depositar(posicionUsuario) {
-//     let ingreso = prompt("Escribe tu ingreso:")
-//     ingreso = Number(ingreso)
-//     cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo + ingreso;
-//     mostrarMenu(posicionUsuario);
-// }
-
-// function retirar(posicionUsuario) {
-//     let retiro = prompt("Escribe cuánto quieres retirar:")
-//     retiro = Number(retiro)
-//     cuentas[posicionUsuario].saldo = cuentas[posicionUsuario].saldo - retiro;
-//     mostrarMenu(posicionUsuario);
-// }
-
-// Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10.
-// Es necesario hacer las validaciones pertinentes en tu código para que no se rompa esta regla de negocio.
-
-
-// ---------------------------------------------------------------------------
-
-// FUNCIONES NUEVAS ADAPTADAS AL DOM (HTML)
-
-
-
-// console.log(`La cuenta no puede tener menos de ${Math.min(...numeros)}`);
-// console.log(`La cuenta no puede tener mas de ${Math.max(...numeros)}`);
-
-
 
 function ingresar() {
     // Tomar datos de los inputs
@@ -85,24 +46,11 @@ function mostrarMenuHTML(posicionUsuario) {
     document.getElementById("nombre-usuario").innerText = cuentas[posicionUsuario].nombre
 
 
-    // Añadir funciones a los botenes desde Js, con ayuda de addEventListener
-    // Consultar saldo
-
-
     document.getElementById('consultar').addEventListener('click', function() {
 
         document.getElementById('info').innerText = 'Tu saldo es de : $' + cuentas[posicionUsuario].saldo
     });
-    // alert('El saldo actual es de: $' + cuentas[posicionUsuario].saldo);
-    // No usar un alert poner el saldo a consultar en un elemento HTML
-    // Opc1. Crear un elemento HTML
-
-    // Opc2. El elemento ya está creado en el HTML y sólo lo rellenamos
-    // Contruir el resto de funciones para los botones
-
-
-
-
+  
     document.getElementById('deposito').addEventListener('click', function() {
 
 
@@ -122,9 +70,6 @@ function mostrarMenuHTML(posicionUsuario) {
             }
         }
     });
-
-
-
 
     document.getElementById("retirar").addEventListener('click', function() {
 
